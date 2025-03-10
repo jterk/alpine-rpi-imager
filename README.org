@@ -1,6 +1,6 @@
 ~alpine-rpi-imager~ -- create Alpine based images for Raspberries Pi
 
-Inspired/influenced by [frood](https://words.filippo.io/dispatches/frood/).
+Inspired/influenced by [[https://words.filippo.io/dispatches/frood/][frood]].
 
 References:
 
