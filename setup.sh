@@ -24,8 +24,6 @@ ln -s /etc/init.d/agetty /etc/init.d/agetty.tty1
 rc-update add agetty.ttyS0 default
 rc-update add agetty.tty1 default
 
-rc-update add firstboot default
-
 rc-update add acpid default
 rc-update add crond default
 rc-update add local default
