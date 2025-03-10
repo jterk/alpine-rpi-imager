@@ -1,0 +1,12 @@
+~alpine-rpi-imager~ -- create Alpine based images for Raspberries Pi
+
+Inspired/influenced by [frood](https://words.filippo.io/dispatches/frood/).
+
+References:
+
+- [[https://gitlab.alpinelinux.org/alpine/mkinitfs][Alpine ~mkinitfs~]]
+- [[https://www.raspberrypi.com/documentation/computers/raspberry-pi.html#eeprom-boot-flow][RPi boot flow]]
+- [[https://github.com/raspberrypi/firmware/tree/master][RPi firmware]]
+- [[https://www.raspberrypi.com/documentation/computers/configuration.html#boot-folder-contents][RPi boot folder reference]]
+- [[https://www.jeffgeerling.com/blog/2023/testing-raspberry-pis-new-debug-probe][Jeff Geerling on using the RPi debug probe]]
+- [[https://pi3g.com/alpine-boot-process-on-the-raspberry-pi/][Alpine RPi boot process]]

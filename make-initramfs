@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+INITRAMFS_ROOT=initramfs-root
+INITRAMFS=/root/initramfs-rpi.test
+
+PACKAGES="alpine-base agetty mkinitfs openntpd"
+export PACKAGES
+
+rm -r $INITRAMFS_ROOT
+
+alpine-make-rootfs -c \
+    $INITRAMFS_ROOT \
+    setup.sh
+
+cp /usr/share/mkinitfs/initramfs-init $INITRAMFS_ROOT/init
+chmod +x $INITRAMFS_ROOT/init
+rm $INITRAMFS_ROOT/etc/modules
+
+cd $INITRAMFS_ROOT
+find . | cpio -o -H newc | gzip > $INITRAMFS
+cd -
